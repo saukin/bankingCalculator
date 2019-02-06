@@ -26,6 +26,8 @@
             <option>Calculate monthly payment for a loan</option>
             <option>Calculate future value of savings</option>
             <option>Calculate monthly payments to reach savings goal</option>
+            
+            <input type="submit" value="Submit">
         </select>
         
     </body>
