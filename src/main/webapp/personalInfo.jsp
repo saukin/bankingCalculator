@@ -13,7 +13,7 @@
     </head>
     <body>
         <h2>Please provide your personal information</h2>
-        <form action="UserData" method="post">
+        <form action="AddAnEmail" method="post">
             <label class="pad_top">Email:</label>
             <input type="email" name="email" value="${user.email}" required><br>
             <label class="pad_top">First Name:</label>

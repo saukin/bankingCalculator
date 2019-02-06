@@ -21,14 +21,16 @@
         </ul>
         
         <h3>Please select an option below</h3>
-        <select name = 'action'>
-            <option>Enter personal information for further contact</option>
-            <option>Calculate monthly payment for a loan</option>
-            <option>Calculate future value of savings</option>
-            <option>Calculate monthly payments to reach savings goal</option>
-            
-            <input type="submit" value="Submit">
-        </select>
+        
+        <form action="personalInfo">
+            <select name = "action">
+                <option>Enter personal information for further contact</option>
+                <option>Calculate monthly payment for a loan</option>
+                <option>Calculate future value of savings</option>
+                <option>Calculate monthly payments to reach savings goal</option>
+
+                <input type="submit" value="Submit">
+            </select>
         
     </body>
 </html>
