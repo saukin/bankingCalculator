@@ -22,15 +22,22 @@
         
         <h3>Please select an option below</h3>
         
-        <form action="personalInfo">
-            <select name = "action">
-                <option>Enter personal information for further contact</option>
-                <option>Calculate monthly payment for a loan</option>
-                <option>Calculate future value of savings</option>
-                <option>Calculate monthly payments to reach savings goal</option>
-
-                <input type="submit" value="Submit">
-            </select>
+        <form action="personalInfo.jsp" method="post">
+            <input type="submit" value="Info">
+        </form>
+        
+        <form action="loanCalculator.jsp" method="post">
+            <input type="submit" value="Loan">
+        </form>
+        
+        <form action="futureValueCalculator.jsp" method="post">
+            <input type="submit" value="Future">
+        </form>
+        
+        <form action="goalCalculator.jsp" method="post">
+            <input type="submit" value="goal">
+        </form>
+        
         
     </body>
 </html>

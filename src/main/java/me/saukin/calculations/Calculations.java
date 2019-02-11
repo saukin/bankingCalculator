@@ -9,10 +9,10 @@ public class Calculations {
     public void loanCalculation (CalculationData calculationData) {
         
         double pv = calculationData.getCurrency();
-        double rate = calculationData.getInterest();
-        double n = calculationData.getTerm();
+        double rate = calculationData.getInterest()/100.0/12;
+        double n = calculationData.getTerm()*12;
         
-        double pmt = pv*(rate/(1 - Math.pow((1 + rate), -n)));
+        double pmt = Math.abs(pv*(rate/(1 - Math.pow((1 + rate), -n))));
        
         calculationData.setAnswer(pmt);
         
@@ -21,10 +21,10 @@ public class Calculations {
     public void futureValueCalculation (CalculationData calculationData) {
         
         double pmt = calculationData.getCurrency();
-        double rate = calculationData.getInterest();
-        double n = calculationData.getTerm();
+        double rate = calculationData.getInterest()/100.0/12;
+        double n = calculationData.getTerm()*12;
         
-        double fv = pmt*((1 - Math.pow((1 + rate), -n))/rate);
+        double fv = Math.abs(pmt*((1 - Math.pow((1 + rate), n))/rate));
         
         calculationData.setAnswer(fv);
     }
@@ -32,10 +32,10 @@ public class Calculations {
     public void savingGoalCalculation (CalculationData calculationData) {
         
         double fv = calculationData.getCurrency();
-        double rate = calculationData.getInterest();
-        double n = calculationData.getTerm();
+        double rate = calculationData.getInterest()/100.0/12;
+        double n = calculationData.getTerm()*12;
         
-        double pmt = fv*(rate/(1 - Math.pow((1 + rate), -n)));
+        double pmt = Math.abs(fv*(rate/(1 - Math.pow((1 + rate), n))));
         
         calculationData.setAnswer(pmt);
     }

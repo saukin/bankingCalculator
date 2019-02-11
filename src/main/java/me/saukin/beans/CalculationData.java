@@ -1,8 +1,6 @@
 
 package me.saukin.beans;
 
-import java.util.Objects;
-
 
 public class CalculationData {
     
