@@ -10,6 +10,8 @@
     </head>
     <body>
         
+        <h1>Online banking calculator</h1>
+        
         <div> 
             <form class="button" action="userInfo.jsp" method="post">
                 <input class="submit" type="submit" value="JOIN OUR EMAIL LIST">

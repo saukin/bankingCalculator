@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package me.saukin.action;
 
 import java.io.IOException;
@@ -16,10 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import me.saukin.beans.CalculationData;
 import me.saukin.calculations.Calculations;
 
-/**
- *
- * @author admin
- */
+
+
 @WebServlet(name = "PerformCalculations", urlPatterns = {"/PerformCalculations"})
 public class PerformCalculations extends HttpServlet {
 
@@ -35,8 +29,6 @@ public class PerformCalculations extends HttpServlet {
             throws ServletException, IOException {
         
         String url = "/result.jsp";
-        
-        // get parameters from the request
         
         String submitButton = request.getParameter("submit");
         
@@ -66,14 +58,11 @@ public class PerformCalculations extends HttpServlet {
                 option = "goal";
             break;
         }
-                
         
         CalculationData calculationData = new CalculationData(currency, interest, term, answer, option);
         
         Calculations calculations = new Calculations();
-        
-        
-        
+       
         switch (calculationData.getOption()) {
             case "loan" : calculations.loanCalculation(calculationData);
                           request.setAttribute("answer" ,Math.round(calculationData.getAnswer()*100)/100.0 + "$");
@@ -90,8 +79,6 @@ public class PerformCalculations extends HttpServlet {
                          request.setAttribute("option" ,calculationData);
             break;
         }
-            
-        
         
         RequestDispatcher dispatcher
                 = getServletContext().getRequestDispatcher(url);

@@ -14,6 +14,7 @@
     </head>
     <body>
         
+        <h1>Online banking calculator</h1>
         
         <div> 
         <form class="button" action="userInfo.jsp" method="post">
