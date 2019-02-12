@@ -13,10 +13,11 @@ public class UserData {
     public UserData() {
     }
 
-    public UserData(String firstName, String lastName, String email) {
+    public UserData(String email, String firstName, String lastName) {
+        this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.email = email;
+        
     }
 
     public String getFirstName() {

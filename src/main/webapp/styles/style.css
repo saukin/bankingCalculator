@@ -1,0 +1,106 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+        
+}
+
+section {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header h1 {
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+h1 {
+    width: 90%;
+    margin: 60px;
+    text-align: center;
+    font-family: helvetica;
+    font-size: 40px;
+}
+
+div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+form {
+    width: 40%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.inside {
+    width: 100%;
+    display: flex;
+}
+
+.fields input {
+    height: 24px;
+    font-size: 14px;
+} 
+
+.fields input[type="submit"], input[type="reset"] {
+    width: 40%;
+    font-size: 18px;
+}
+
+.fields :hover {
+    transition: none;
+}
+
+label {
+    padding: 0 5px 0 5px;
+    font-size: 18px;
+}
+
+.submit {
+    width: 100%;
+    height:300px;
+    font-family: alef;
+    font-size: 25px;
+    
+}
+
+
+
+.button :hover {
+    background-color: green;
+    transition: .5s;
+}
+
+
+
