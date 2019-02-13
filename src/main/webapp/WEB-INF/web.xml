@@ -12,7 +12,7 @@
     
     <context-param>
         <param-name>EmailFile</param-name>
-        <param-value>c:\Users\admin\Documents\NetBeansProjects\BankingCalculator\target\EmailList.txt</param-value>
+        <param-value>c:\Users\admin\Documents\NetBeansProjects\BankingCalculator\EmailList.txt</param-value>
     </context-param>
     
     <welcome-file-list>
