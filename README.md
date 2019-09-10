@@ -1,7 +1,7 @@
 # bankingCalculator
 study project - java ee, jsp, maven, payara, files
 
-This is my study project representing my basic abilities in java ee, jsp, payara server, maven and writing/editing local doc-files. 
+This is my study project representing my basic skills in java ee, jsp, payara server, maven and writing/editing local doc-files. 
 
 To launch it please do next actions:
 
